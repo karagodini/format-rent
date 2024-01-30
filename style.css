@@ -1,0 +1,47 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Work Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, #1a1a1a 30%, rgba(26, 26, 26, 0.496236) 30%);
+}
+
+.top-container .custom-logo {
+    width: 180px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info img {
+    width: 45px;
+    height: 45px;
+}
+
+.contact-info .contact-info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info p {
+    color: #ffbc13;
+    margin: 0;
+}
+
+.contact-info a {
+    font-size: 14px;
+    color: #fff;
+}
