@@ -1137,3 +1137,15 @@ footer .copy-right .content p {
     border-top: 100px solid #ffbc13;
     border-right: 100px solid transparent;
 }
+
+/*catalog*/
+.projects-section {
+    max-width: 1320px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects-section .container {
+    display: flex;
+}
