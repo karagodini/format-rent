@@ -10,52 +10,74 @@
 <body>
     <div class="projects-section">
         <div class="container">
-            <div class="project-item">
+            <div class="project-item" data-overlay-id="overlay1">
                 <div class="image">
                     <img src="images/крупношитовая_опалубка.png" alt="">
                 </div>
-                <div class="overlay">
-                    <h3>Крупнощитовая опалубка</h3>
+                <div class="overlay" id="overlay1">
+                    <h3><a href="">Крупнощитовая опалубка</a></h3>
                     <p></p>
                 </div>
             </div>
-            <div class="project-item">
+            <div class="project-item" data-overlay-id="overlay2">
                 <div class="image">
                     <img src="images/мелкощитовая опалубка.png" alt="">
                 </div>
-                <div class="overlay">
-                    <h3>Мелкощитовая опалубка</h3>
+                <div class="overlay" id="overlay2">
+                    <h3><a href="">Мелкощитовая опалубка</a></h3>
                     <p></p>
                 </div>
             </div>
-            <div class="project-item">
+            <div class="project-item" data-overlay-id="overlay3">
                 <div class="image">
                     <img src="images/опалубка колонн.png" alt="">
                 </div>
-                <div class="overlay">
-                    <h3>Опалубка колонн</h3>
+                <div class="overlay" id="overlay3">
+                    <h3><a href="">Опалубка колонн</a></h3>
                     <p></p>
                 </div>
             </div>
-            <div class="project-item">
+            <div class="project-item" data-overlay-id="overlay4">
                 <div class="image">
                     <img src="images/телескопические стойки.png" alt="">
                 </div>
-                <div class="overlay">
-                    <h3>Телескопические стойки</h3>
+                <div class="overlay" id="overlay4">
+                    <h3><a href="">Телескопические стойки</a></h3>
                     <p></p>
                 </div>
             </div>
-            <div class="project-item">
+            <div class="project-item" data-overlay-id="overlay5">
                 <div class="image">
                     <img src="images/объемная опалубка.png" alt="">
                 </div>
-                <div class="overlay">
-                    <h3>Объемные стойки</h3>
+                <div class="overlay" id="overlay5">
+                    <h3><a href="">Объемные стойки</a></h3>
                     <p></p>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        const projectItems = document.querySelectorAll(".project-item");
+        projectItems.forEach((projectItem) => {
+            projectItem.addEventListener("mouseenter", () => {
+                const overlayId = projectItem.dataset.overlayId;
+                const overlay = document.getElementById(overlayId);
+
+                if (overlay) {
+                    overlay.style.display = 'flex';
+                }
+            });
+
+            projectItem.addEventListener("mouseleave", () => {
+                const overlayId = projectItem.dataset.overlayId;
+                const overlay = document.getElementById(overlayId);
+
+                if (overlay) {
+                    overlay.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
