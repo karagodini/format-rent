@@ -1152,11 +1152,12 @@ footer .copy-right .content p {
 }
 
 .projects-section .container .project-item {
-    border: 1px solid;
-    margin-bottom: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
     margin-left: 30px;
     cursor: pointer;
     position: relative;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 .projects-section .container .project-item .image {
@@ -1176,6 +1177,7 @@ footer .copy-right .content p {
     top: 0;
     left: 0;
     background: rgba(0,30,76,.9);
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
 }
