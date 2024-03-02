@@ -10,7 +10,7 @@
 <body>
     <div class="projects-section">
         <div class="container">
-            <div class="project-item" data-overlay-id="overlay1">
+            <div class="project-item large-formwork" data-overlay-id="overlay1">
                 <div class="image">
                     <img src="images/крупношитовая_опалубка.png" alt="">
                 </div>
@@ -19,7 +19,7 @@
                     <p></p>
                 </div>
             </div>
-            <div class="project-item" data-overlay-id="overlay2">
+            <div class="project-item small-formwork" data-overlay-id="overlay2">
                 <div class="image">
                     <img src="images/мелкощитовая опалубка.png" alt="">
                 </div>
@@ -78,6 +78,12 @@
                 }
             });
         });
+
+        //popups
+        const largeFormwork = document.querySelector('.large-formwork')
+        largeFormwork.addEventListener('click', () => {
+            console.log('click')
+        })
     </script>
 </body>
 </html>
