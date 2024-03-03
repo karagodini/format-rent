@@ -1208,3 +1208,228 @@ footer .copy-right .content p {
     border-bottom: 100px solid #ffbc13;
     border-right: 100px solid transparent;
 }
+
+/*popups*/
+.popups-formwork .large-formwork-container {
+    display: none;
+    background: #1a1a1a;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 42px;
+}
+.popups-formwork .small-formwork-container {
+    display: none;
+    background: #1a1a1a;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 42px;
+}
+
+.popups-formwork .container {
+    background: #FFF;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.popups-formwork .container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.popups-formwork .content img {
+    width: 528px;
+}
+
+.popups-formwork .bx-x {
+    position: absolute;
+    top: 60px;
+    right: 70px;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.popups-formwork .content .content-container h2 {
+    font-size: 49px;
+}
+
+.popups-formwork .content .content-container .desc span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.popups-formwork .content .content-container .desc ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.popups-formwork .content .content-container .desc li {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.8;
+    color: #2c2c2c;
+}
+
+.popups-formwork .content .content-container .desc li i {
+    margin-right: 5px;
+    color: #ffbc13;
+    vertical-align: -2px;
+}
+
+.popups-formwork .content .content-container .form {
+    background: #f5f4f4;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.popups-formwork .content .content-container .form span {
+    font-size: 28px;
+}
+
+.popups-formwork .content .content-container .form form {
+    margin-top: 12px;
+    position: relative;
+}
+
+.popups-formwork .content .content-container .form form input {
+    padding-right: 315px;
+    padding-left: 15px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    font-size: 28px;
+    background: transparent;
+    border: 1px solid #ffbc13;
+    border-radius: 10px;
+}
+
+.popups-formwork .content .content-container .form form button {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    padding-top: 34px;
+    right: 0;
+    position: absolute;
+    background: linear-gradient(90deg, #ff4315 0%, #ffbc13 100%);
+    border: 1px solid #ffbc13;
+    border-radius: 10px;
+    font-size: 21px;
+    color: #fff;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.popups-formwork .container .buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.popups-formwork .container .buttons a {
+    border: 1px solid #ffbc13;
+    border-radius: 10px;
+    font-size: 21px;
+    color: #fff;
+    padding: 20px 40px;
+    margin: 0 10px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff4315 0%, #ffbc13 100%);
+}
+
+.popups-formwork .container .buttons a:hover {
+    color: #1a1a1a;
+    background: #ffbc13;
+}
+
+@media (max-width: 1300px) {
+    .popups-formwork .content img {
+        width: 328px;
+    }
+    .projects-section .container .project-item img {
+        width: 300px;
+        height: 340px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .popups-formwork .content .content-container h2 {
+        font-size: 30px;
+    }
+    .popups-formwork .content .content-container .form span {
+        font-size: 20px;
+    }
+    .popups-formwork .content .content-container .form form input {
+        padding-right: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .popups-formwork .content .content-container .form form button {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    .projects-section .container {
+        justify-content: center;
+    }
+    .projects-section .container .project-item {
+        margin-left: 0;
+    }
+    .projects-section .container .project-item img {
+        width: 300px;
+        height: 340px;
+    }
+    .popups-formwork .bx-x {
+        font-size: 30px;
+    }
+    .popups-formwork .container .content {
+        flex-wrap: wrap;
+    }
+    .popups-formwork .content img {
+        width: 210px;
+    }
+    .popups-formwork .content .content-container h2 {
+        font-size: 20px;
+    }
+    .popups-formwork .content .content-container .desc span {
+        font-size: 14px;
+    }
+    .popups-formwork .content .content-container .desc li {
+        font-size: 14px;
+    }
+    .popups-formwork .container .buttons a {
+        font-size: 14px;
+    }
+    .popups-formwork .content .content-container .form {
+        padding: 10px;
+    }
+    .popups-formwork .content .content-container .form form input {
+        font-size: 14px;
+        padding-right: 100px;
+    }
+    .popups-formwork .content .content-container .form span {
+        font-size: 14px;
+    }
+    .popups-formwork .content .content-container .form form button {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

@@ -57,8 +57,78 @@
             </div>
         </div>
     </div>
+        <div class="popups-formwork">
+            <div class="large-formwork-container">
+                <i class='bx bx-x popup-close-large'></i>
+                <div class="container">
+                    <div class="content">
+                        <img src="images/крупношитовая_опалубка.png" alt="">
+                        <div class="content-container">
+                            <h2>Крупнощитовая опалубка</h2>
+                            <div class="desc">
+                                <span>Основные преимущества</span>
+                                <ul>
+                                    <li><i class='bx bx-play'></i>ГОСТ Р 52085-2003</li>
+                                    <li><i class='bx bx-play'></i>Категория 1 по ГОСТ 15150</li>
+                                    <li><i class='bx bx-play'></i>Несущая способность – 80 кН/м. кв.</li>
+                                    <li><i class='bx bx-play'></i>Защита от окружающей среды</li>
+                                    <li><i class='bx bx-play'></i>Палуба щита – березовая ламинированная фанера 18мм.</li>
+                                </ul>
+                            </div>
+                            <div class="buttons">
+                                <a href="">Аренда</a>
+                                <a href="">Покупка</a>
+                            </div>
+                            <div class="form">
+                                <span class="title">Узнать стоимость прямо сейчас</span>
+                                <form action="">
+                                    <input type="tel" name="" id="" placeholder="+7">
+                                    <button type="submit">Получить цены</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="small-formwork-container">
+                <i class='bx bx-x popup-close-small'></i>
+                <div class="container">
+                    <div class="content">
+                        <img src="images/мелкощитовая опалубка.png" alt="">
+                        <div class="content-container">
+                            <h2>Мелкощитовая опалубка</h2>
+                            <div class="desc">
+                                <span>Основные преимущества</span>
+                                <ul>
+                                    <li><i class='bx bx-play'></i>ГОСТ Р 52085-2003</li>
+                                    <li><i class='bx bx-play'></i>Ширина доборных щитов совпадает с шириной стандартных линейных щитов</li>
+                                    <li><i class='bx bx-play'></i>Ребра жесткости с шагом 290 мм.</li>
+                                    <li><i class='bx bx-play'></i>Высота – от 0,60 до 2,70 м</li>
+                                    <li><i class='bx bx-play'></i>Ширина – от 0,20 до 1,20 м</li>
+                                </ul>
+                            </div>
+                            <div class="buttons">
+                                <a href="">Аренда</a>
+                                <a href="">Покупка</a>
+                            </div>
+                            <div class="form">
+                                <span class="title">Узнать стоимость прямо сейчас</span>
+                                <form action="">
+                                    <input type="tel" name="" id="" placeholder="+7">
+                                    <button type="submit">Получить цены</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
     <script>
         const projectItems = document.querySelectorAll(".project-item");
+        const largeFormworkContainer = document.querySelector('.large-formwork-container')
+        const smallFormworkContainer = document.querySelector('.small-formwork-container')
         projectItems.forEach((projectItem) => {
             projectItem.addEventListener("mouseenter", () => {
                 const overlayId = projectItem.dataset.overlayId;
@@ -81,8 +151,24 @@
 
         //popups
         const largeFormwork = document.querySelector('.large-formwork')
-        largeFormwork.addEventListener('click', () => {
-            console.log('click')
+        largeFormwork.addEventListener('click', (e) => {
+            e.preventDefault()
+            largeFormworkContainer.style.display = 'block'
+        })
+        const smallFormwork = document.querySelector('.small-formwork')
+        smallFormwork.addEventListener('click', (e) => {
+            e.preventDefault()
+            smallFormworkContainer.style.display = 'block'
+        })
+        const popupCloseLarge = document.querySelector('.popup-close-large')
+        popupCloseLarge.addEventListener('click', (e) => {
+            e.preventDefault()
+            largeFormworkContainer.style.display = 'none'
+        })
+        const popupCloseSmall = document.querySelector('.popup-close-small')
+        popupCloseSmall.addEventListener('click', (e) => {
+            e.preventDefault()
+            smallFormworkContainer.style.display = 'none'
         })
     </script>
 </body>
