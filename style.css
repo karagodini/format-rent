@@ -1139,16 +1139,17 @@ footer .copy-right .content p {
 }
 
 /*catalog*/
-.projects-section {
+.projects-section, .stocks-section {
     max-width: 1320px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.projects-section .container {
+.projects-section .container, .stocks-section .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projects-section .container .project-item {
@@ -1160,8 +1161,12 @@ footer .copy-right .content p {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.projects-section .container .project-item .image {
-
+.stocks-section .container .stocks-item {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    position: relative;
 }
 
 .projects-section .container .project-item img {
@@ -1169,7 +1174,14 @@ footer .copy-right .content p {
     height: 429px;
 }
 
-.projects-section .container .overlay {
+.stocks-section .container .stocks-item img {
+    width: 375px;
+    height: 429px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.projects-section .container .overlay, .stocks-section .container .overlay {
     display: none;
     position: absolute;
     width: 100%;
@@ -1182,16 +1194,26 @@ footer .copy-right .content p {
     justify-content: center;
 }
 
-.projects-section .container .overlay h3 a {
+.stocks-section .container .overlay {
+    flex-direction: column;
+}
+
+.projects-section .container .overlay h3 a, .stocks-section .container .overlay h3 a {
     color: #fff;
     text-decoration: none;
 }
 
-.projects-section .container .overlay h3 {
+.projects-section .container .overlay h3, .stocks-section .container .overlay h3 {
     font-size: 24px;
+    text-align: center;
 }
 
-.projects-section .container .overlay:before {
+.stocks-section .container .overlay p {
+    color: #fff;
+    font-weight: 700;
+}
+
+.projects-section .container .overlay:before, .stocks-section .container .overlay:before {
     position: absolute;
     content: '';
     top: 10px;
@@ -1200,7 +1222,7 @@ footer .copy-right .content p {
     border-left: 100px solid transparent;
 }
 
-.projects-section .container .overlay:after {
+.projects-section .container .overlay:after, .stocks-section .container .overlay:after {
     position: absolute;
     content: '';
     bottom: 10px;
@@ -1214,7 +1236,16 @@ footer .copy-right .content p {
  .popups-formwork .small-formwork-container,
   .popups-formwork .columns-formwork-container,
   .popups-formwork .telescopic-formwork-container,
-  .voluminous-formwork-container {
+  .voluminous-formwork-container,
+  .stocks-1-container,
+  .stocks-2-container,
+  .stocks-3-container,
+  .stocks-4-container,
+  .stocks-5-container,
+  .stocks-6-container,
+  .stocks-7-container,
+  .stocks-8-container,
+  .stocks-9-container {
     display: none;
     background: #1a1a1a;
     position: fixed;
@@ -1225,25 +1256,33 @@ footer .copy-right .content p {
     padding: 42px;
 }
 
-.popups-formwork .container {
+.popups-formwork .container, .popups-stocks .container {
     background: #FFF;
     height: 100%;
     width: 100%;
     border-radius: 20px;
 }
 
-.popups-formwork .container .content {
+.popups-formwork .container .content, .popups-stocks .container .content {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 100%;
 }
 
+.popups-stocks .container .content {
+    padding: 0 20px;
+}
+
 .popups-formwork .content img {
     width: 528px;
 }
 
-.popups-formwork .bx-x {
+.popups-stocks .content img {
+    width: 430px;
+}
+
+.popups-formwork .bx-x, .popups-stocks .bx-x {
     position: absolute;
     top: 60px;
     right: 70px;
@@ -1251,16 +1290,30 @@ footer .copy-right .content p {
     cursor: pointer;
 }
 
-.popups-formwork .content .content-container h2 {
+.popups-stocks .content .content-container {
+    padding: 0 50px;
+}
+
+.popups-formwork .content .content-container h2, .popups-stocks .content .content-container h2 {
     font-size: 49px;
 }
 
-.popups-formwork .content .content-container .desc span {
+.popups-stocks .content .content-container .price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffbc13;
+}
+
+.popups-stocks .content .content-container .desc {
+    margin-top: 30px;
+}
+
+.popups-formwork .content .content-container .desc span, .popups-stocks .content .content-container .desc span {
     font-size: 20px;
     font-weight: 700;
 }
 
-.popups-formwork .content .content-container .desc ul {
+.popups-formwork .content .content-container .desc ul, .popups-stocks .content .content-container .desc ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -1268,7 +1321,7 @@ footer .copy-right .content p {
     margin-bottom: 30px;
 }
 
-.popups-formwork .content .content-container .desc li {
+.popups-formwork .content .content-container .desc li, .popups-stocks .content .content-container .desc li {
     display: block;
     font-size: 18px;
     font-weight: 500;
@@ -1279,13 +1332,13 @@ footer .copy-right .content p {
     color: #2c2c2c;
 }
 
-.popups-formwork .content .content-container .desc li i {
+.popups-formwork .content .content-container .desc li i, .popups-stocks .content .content-container .desc li i {
     margin-right: 5px;
     color: #ffbc13;
     vertical-align: -2px;
 }
 
-.popups-formwork .content .content-container .form {
+.popups-formwork .content .content-container .form, .popups-stocks .content .content-container .form {
     background: #f5f4f4;
     padding: 25px;
     border-radius: 10px;
@@ -1296,12 +1349,12 @@ footer .copy-right .content p {
     font-size: 28px;
 }
 
-.popups-formwork .content .content-container .form form {
+.popups-formwork .content .content-container .form form, .popups-stocks .content .content-container .form form {
     margin-top: 12px;
     position: relative;
 }
 
-.popups-formwork .content .content-container .form form input {
+.popups-formwork .content .content-container .form form input, .popups-stocks .content .content-container .form form input {
     padding-right: 315px;
     padding-left: 15px;
     padding-top: 28px;
@@ -1312,7 +1365,7 @@ footer .copy-right .content p {
     border-radius: 10px;
 }
 
-.popups-formwork .content .content-container .form form button {
+.popups-formwork .content .content-container .form form button, .popups-stocks .content .content-container .form form button {
     padding-right: 50px;
     padding-left: 50px;
     padding-bottom: 30px;
@@ -1590,5 +1643,14 @@ footer .copy-right .content p {
     }
     .popup-price-container .container {
         width: 100%;
+    }
+
+    /*akcii*/
+    .stocks-section .container .stocks-item {
+        margin-left: 0;
+    }
+    .stocks-section .container .stocks-item img {
+        width: 300px;
+        height: 340px;
     }
 }
