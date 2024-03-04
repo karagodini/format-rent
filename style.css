@@ -1210,17 +1210,11 @@ footer .copy-right .content p {
 }
 
 /*popups*/
-.popups-formwork .large-formwork-container {
-    display: none;
-    background: #1a1a1a;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 42px;
-}
-.popups-formwork .small-formwork-container {
+.popups-formwork .large-formwork-container,
+ .popups-formwork .small-formwork-container,
+  .popups-formwork .columns-formwork-container,
+  .popups-formwork .telescopic-formwork-container,
+  .voluminous-formwork-container {
     display: none;
     background: #1a1a1a;
     position: fixed;
@@ -1355,6 +1349,143 @@ footer .copy-right .content p {
     background: #ffbc13;
 }
 
+.popups-formwork .telescopic-formwork-container .content .content-container .desc {
+    width: 90%;
+}
+
+.rent-container, .purchase-container {
+    background: #1a1a1a;
+    position: fixed;
+    padding: 42px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.rent-container .bx-x, .purchase-container .bx-x {
+    position: absolute;
+    top: 19%;
+    right: 27%;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.rent-container .container, .purchase-container .container {
+    background: #FFF;
+    height: 70%;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.rent-container .content, .purchase-container .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.rent-container .content span, .purchase-container .content span {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.rent-container .content form, .purchase-container .content form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.rent-container .content form input, .purchase-container .content form input {
+    border: 1px solid #ffbc13;
+    border-radius: 10px;
+    padding: 10px 40px 10px 10px;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.rent-container .content form button, .purchase-container .content form button {
+    border: 1px solid #ffbc13;
+    border-radius: 10px;
+    background: #ffbc13;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*popup price*/
+.popup-price-container {
+    background: #1a1a1a;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 42px;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-price-container .bx-x {
+    position: absolute;
+    top: 28%;
+    right: 27%;
+    font-size: 40px;
+    cursor: pointer;
+}
+.popup-price-container .container {
+    background: #FFF;
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+}
+.popup-price-container .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.popup-price-container .content h4 {
+    font-size: 37px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.popup-price-container .content span {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.popup-price-container .content form {
+    display: flex;
+    flex-direction: column;
+}
+.popup-price-container .content form input {
+    height: 48px;
+    padding: 0 48px 0 20px;
+    font-size: 23px;
+    border: 1px solid #ffbc13;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.popup-price-container .content form button {
+    font-size: 20px;
+    font-weight: 700;
+    height: 48px;
+    border: 1px solid #ffbc13;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ff4315 0%, #ffbc13 100%);
+    color: #fff;
+    cursor: pointer;
+}
+/*end popup price*/
+
 @media (max-width: 1300px) {
     .popups-formwork .content img {
         width: 328px;
@@ -1380,6 +1511,10 @@ footer .copy-right .content p {
     .popups-formwork .content .content-container .form form button {
         padding-top: 14px;
         padding-bottom: 14px;
+    }
+    /*price*/
+    .popup-price-container .content h4 {
+        font-size: 27px;
     }
 }
 
@@ -1413,7 +1548,8 @@ footer .copy-right .content p {
         font-size: 14px;
     }
     .popups-formwork .container .buttons a {
-        font-size: 14px;
+        font-size: 12px;
+        padding: 10px 20px;
     }
     .popups-formwork .content .content-container .form {
         padding: 10px;
@@ -1431,5 +1567,28 @@ footer .copy-right .content p {
         padding-right: 10px;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+    .rent-container, .purchase-container {
+        padding: 10px;
+    }
+    .rent-container .bx-x, .purchase-container .bx-x {
+        top: 2%;
+        right: 5%;
+    }
+    .rent-container .container, .purchase-container .container {
+        height: 100%;
+        width: 100%;
+    }
+    /*price*/
+    .popup-price-container {
+        padding: 10px;
+    }
+    .popup-price-container .bx-x {
+        top: 26%;
+        right: 4%;
+        font-size: 30px;
+    }
+    .popup-price-container .container {
+        width: 100%;
     }
 }
