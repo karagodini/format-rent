@@ -1547,6 +1547,28 @@ footer .copy-right .content p {
         width: 300px;
         height: 340px;
     }
+    .popups-stocks .content img {
+        width: 330px;
+    }
+    .popups-stocks .content .content-container h2 {
+        font-size: 29px;
+    }
+    .popups-stocks .content .content-container .desc span {
+        font-size: 16px;
+    }
+    .popups-stocks .content .content-container .desc li {
+        font-size: 16px;
+    }
+    .popups-stocks .content .content-container .form form input {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-size: 20px;
+    }
+    .popups-stocks .content .content-container .form form button {
+        padding-top: 20px;
+        padding-bottom: 17px;
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 1130px) {
@@ -1652,5 +1674,51 @@ footer .copy-right .content p {
     .stocks-section .container .stocks-item img {
         width: 300px;
         height: 340px;
+    }
+    .stocks-1-container, .stocks-2-container, .stocks-3-container, .stocks-4-container, .stocks-5-container, .stocks-6-container, .stocks-7-container, .stocks-8-container, .stocks-9-container {
+        padding: 10px;
+    }
+    .popups-stocks .bx-x {
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+    }
+    .popups-stocks .container .content {
+        flex-direction: column;
+    }
+    .popups-stocks .content img {
+        height: 330px;
+    }
+    .popups-stocks .content .content-container {
+        padding: 0;
+    }
+    .popups-stocks .content .content-container h2 {
+        font-size: 20px;
+    }
+    .popups-stocks .content .content-container .price {
+        font-size: 16px;
+    }
+    .popups-stocks .content .content-container .desc span {
+        font-size: 14px;
+    }
+    .stocks-4-container .content .content-container .desc span {
+        display: none;
+    }
+    .popups-stocks .content .content-container .desc li {
+        font-size: 14px;
+    }
+    .popups-stocks .content .content-container .form {
+        padding: 0;
+    }
+    .popups-stocks .content .content-container .form form input {
+        font-size: 14px;
+        padding-right: 180px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .popups-stocks .content .content-container .form form button {
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
