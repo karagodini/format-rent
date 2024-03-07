@@ -1539,6 +1539,80 @@ footer .copy-right .content p {
 }
 /*end popup price*/
 
+/*contact*/
+.contact-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+.contact-container .content {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 10px;
+    color: #1a1a1a;
+}
+
+.contact-container .map {
+    width: 70%;
+}
+
+.contact-container .content h3 {
+    font-size: 25px;
+}
+
+.contact-container .content .content-block {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-container .content .content-block i {
+    margin-right: 10px;
+    background: #ffbc13;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.contact-container .content .content-block a {
+    color: #1a1a1a;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.contact-form form input {
+    width: 40%;
+    font-size: 20px;
+    border: 1px solid #ffbc13;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form form button {
+    width: 40%;
+    border: 1px solid #ffbc13;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffbc13;
+    color: #1a1a1a;
+    font-size: 20px;
+    font-weight: 700;
+}
+/*end contact*/
+
 @media (max-width: 1300px) {
     .popups-formwork .content img {
         width: 328px;
@@ -1592,6 +1666,20 @@ footer .copy-right .content p {
         font-size: 27px;
     }
 }
+
+/*contact*/
+@media (max-width: 800px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-container .content {
+        width: 100%;
+    }
+    .contact-container .map {
+        width: 100%;
+    }
+}
+/*end contact*/
 
 @media (max-width: 450px) {
     .projects-section .container {
