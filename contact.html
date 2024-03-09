@@ -8,6 +8,36 @@
     <title>Contact</title>
 </head>
 <body>
+    <a href="" class="mobile-btn"><i class='bx bx-menu'></i></a>
+    <div class="mobile-menu">
+        <i class='bx bx-x mobile-close'></i>
+        <a href="/about-test">О компании</a>
+        <a href="/katalog-test">Каталог</a>
+        <a href="" class="price-btn">Цены</a>
+        <a href="/stocks-test">Акции</a>
+        <a href="">Калькулятор</a>
+        <a href="/kontakty-test">Контакты</a>
+    </div>
+
+    <script>
+        const mobileBtn = document.querySelector('.mobile-btn')
+        const mobileClose = document.querySelector('.mobile-close')
+        const mobileMenu = document.querySelector('.mobile-menu')
+
+        mobileBtn.addEventListener('click', (e) => {
+            e.preventDefault()
+            mobileMenu.style.display = 'flex'
+            mobileBtn.style.display = 'none'
+        })
+
+        mobileClose.addEventListener('click', (e) => {
+            e.preventDefault()
+            mobileMenu.style.display = 'none'
+            mobileBtn.style.display = 'block'
+
+        })
+    </script>
+
     <div class="contact-container">
         <div class="content">
             <h3>Офис</h3>
@@ -38,6 +68,7 @@
         </div>
     </div>
     <div class="contact-form">
+        <h4>Форма обратной связи</h4>
         <form action="">
             <input type="text" name="" id="name" placeholder="Имя">
             <input type="tel" name="" id="tel" placeholder="Телефон">

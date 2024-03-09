@@ -432,9 +432,6 @@ header .container .content a:hover {
     margin-bottom: 20px;
 }
 
-.works .container .works-content .works-item {
-
-}
 
 .works .container .works-content .works-item .works-item-single:first-child {
     background: url(/images/about-fact-bg.jpg) no-repeat center;
@@ -1582,10 +1579,17 @@ footer .copy-right .content p {
     color: #1a1a1a;
 }
 
+.contact-form {
+    padding-top: 100px;
+}
+
 .contact-form form {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+}
+
+.contact-form form h4 {
+    text-align: center;
 }
 
 .contact-form form input {
@@ -1612,6 +1616,35 @@ footer .copy-right .content p {
     font-weight: 700;
 }
 /*end contact*/
+
+/*mobile menu*/
+.mobile-btn {
+    font-size: 30px;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: #1a1a1a;
+    padding: 10px;
+}
+
+.mobile-menu i {
+    color: #fff;
+    font-size: 30px;
+    text-align: right;
+    margin-top: -10px;
+    margin-right: -10px;
+}
+
+.mobile-menu a {
+    padding: 5px;
+    margin: 5px 0;
+    color: #1a1a1a;
+    background: #ffbc13;
+    border-radius: 10px;
+}
+/*end mobile menu*/
 
 @media (max-width: 1300px) {
     .popups-formwork .content img {
@@ -1808,5 +1841,13 @@ footer .copy-right .content p {
         font-size: 14px;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+
+    /*contact*/
+    .contact-form form input {
+        width: 90%;
+    }
+    .contact-form form button {
+        width: 90%;
     }
 }
