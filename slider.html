@@ -15,38 +15,17 @@
                 <div class="slide" style="background-color: #aaffaa;">Slide 2</div>
                 <div class="slide" style="background-color: #aadddd;">Slide 3</div>
                 <div class="slide" style="background-color: #ffeecc;">Slide 4</div>
+                <div class="slide" style="background-color: #aaffaa;">Slide 5</div>
+                <div class="slide" style="background-color: #aadddd;">Slide 6</div>
+                <div class="slide" style="background-color: #ffeecc;">Slide 7</div>
+                <div class="slide" style="background-color: #aaffaa;">Slide 8</div>
+                <div class="slide" style="background-color: #aadddd;">Slide 9</div>
+                <div class="slide" style="background-color: #ffeecc;">Slide 0</div>
             </div>
             <button id="prev" onclick="prevSlide()">prev</button>
             <button id="next" onclick="nextSlide()">next</button>
         </div>
     <!--</div>-->
-    <script>
-    let currentSlide = 0;
-    const slides = document.getElementById('slides');
-    const totalSlides = document.querySelectorAll('.slide').length;
-
-    function showSlide() {
-        const newTransformValue = -currentSlide * 100 + '%';
-        slides.style.transform = 'translateX(' + newTransformValue + ')';
-    }
-
-    function prevSlide() {
-        if (currentSlide > 0) {
-            currentSlide--;
-        } else {
-            currentSlide = totalSlides - 1;
-        }
-        showSlide();
-    }
-
-    function nextSlide() {
-        if (currentSlide < totalSlides - 1) {
-            currentSlide++;
-        } else {
-            currentSlide = 0;
-        }
-        showSlide();
-    }
-</script>
+    
 </body>
 </html>

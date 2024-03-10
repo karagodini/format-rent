@@ -332,6 +332,7 @@ header .container .content a:hover {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
 }
 
 .service .container .service-content {
@@ -1659,7 +1660,7 @@ footer .copy-right .content p {
 
 /*slider katalog*/
 #slider-container {
-    width: 300px;
+    width: 700px;
     height: 180px;
     overflow: hidden;
     position: relative;
@@ -1671,7 +1672,7 @@ footer .copy-right .content p {
 }
 
 .slide {
-    min-width: 100%;
+    min-width: 350px;
     height: 100px;
     box-sizing: border-box;
 }
