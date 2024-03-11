@@ -126,32 +126,32 @@
     </div>
 
     <script>
-        let katalogCurrentSlide = 0;
-        const katalogSlides = document.getElementById('slides');
-        const katalogTotalSlides = document.querySelectorAll('.slide').length;
-        const katalogSlideWidth = 350;
+        let projectCurrentSlide = 0;
+        const projectSlides = document.getElementById('project-slides');
+        const projectTotalSlides = document.querySelectorAll('.project-slide').length;
+        const projectSlideWidth = 350;
     
-        function showSlide() {
-            const katalogNewTransformValue = -katalogCurrentSlide * (katalogSlideWidth + 10) + 'px';
-            katalogSlides.style.transform = 'translateX(' + katalogNewTransformValue + ')';
+        function projectShowSlide() {
+            const progectNewTransformValue = -projectCurrentSlide * (projectSlideWidth + 10) + 'px';
+            projectSlides.style.transform = 'translateX(' + progectNewTransformValue + ')';
         }
     
-        function prevSlide() {
-            if (katalogCurrentSlide > 0) {
-                katalogCurrentSlide--;
+        function projectPrevSlide() {
+            if (projectCurrentSlide > 0) {
+                projectCurrentSlide--;
             } else {
-                katalogCurrentSlide = katalogTotalSlides - 1;
+                projectCurrentSlide = projectTotalSlides - 1;
             }
-            showSlide();
+            projectShowSlide();
         }
     
-        function nextSlide() {
-            if (katalogCurrentSlide < katalogTotalSlides - 1) {
-                katalogCurrentSlide++;
+        function projectNextSlide() {
+            if (projectCurrentSlide < projectTotalSlides - 1) {
+                projectCurrentSlide++;
             } else {
-                katalogCurrentSlide = 0;
+                projectCurrentSlide = 0;
             }
-            showSlide();
+            projectShowSlide();
         }
     </script>
 
