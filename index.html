@@ -110,17 +110,14 @@
             <div class="service-slider">
                 <div id="slider-container">
                     <div id="slides">
-                        <div class="slide" style="background-color: #ffcccb;">Slide 1</div>
-                        <div class="slide" style="background-color: #aaffaa;">Slide 2</div>
-                        <div class="slide" style="background-color: #aadddd;">Slide 3</div>
-                        <div class="slide" style="background-color: #ffeecc;">Slide 4</div>
-                        <div class="slide" style="background-color: #aaffaa;">Slide 5</div>
-                        <div class="slide" style="background-color: #aadddd;">Slide 6</div>
-                        <div class="slide" style="background-color: #ffeecc;">Slide 7</div>
-                        <div class="slide" style="background-color: #aaffaa;">Slide 8</div>
-                        <div class="slide" style="background-color: #aadddd;">Slide 9</div>
-                        <div class="slide" style="background-color: #ffeecc;">Slide 0</div>
+                        <div class="slide"><img src="images/крупношитовая_опалубка.png" alt=""></div>
+                        <div class="slide"><img src="images/мелкощитовая опалубка.png" alt=""></div>
+                        <div class="slide"><img src="images/опалубка колонн.png" alt=""></div>
+                        <div class="slide"><img src="images/телескопические стойки.png" alt=""></div>
+                        <div class="slide"><img src="images/объемная опалубка.png" alt=""></div>
                     </div>
+                </div>
+                <div class="slider-nav">
                     <button id="prev" onclick="prevSlide()"><i class='bx bx-chevron-left'></i></button>
                     <button id="next" onclick="nextSlide()"><i class='bx bx-chevron-right'></i></button>
                 </div>
@@ -129,29 +126,30 @@
     </div>
 
     <script>
-        let currentSlide = 0;
-        const slides = document.getElementById('slides');
-        const totalSlides = document.querySelectorAll('.slide').length;
+        let katalogCurrentSlide = 0;
+        const katalogSlides = document.getElementById('slides');
+        const katalogTotalSlides = document.querySelectorAll('.slide').length;
+        const katalogSlideWidth = 350;
     
         function showSlide() {
-            const newTransformValue = -currentSlide * 350 + 'px';
-            slides.style.transform = 'translateX(' + newTransformValue + ')';
+            const katalogNewTransformValue = -katalogCurrentSlide * (katalogSlideWidth + 10) + 'px';
+            katalogSlides.style.transform = 'translateX(' + katalogNewTransformValue + ')';
         }
     
         function prevSlide() {
-            if (currentSlide > 0) {
-                currentSlide--;
+            if (katalogCurrentSlide > 0) {
+                katalogCurrentSlide--;
             } else {
-                currentSlide = totalSlides - 1;
+                katalogCurrentSlide = katalogTotalSlides - 1;
             }
             showSlide();
         }
     
         function nextSlide() {
-            if (currentSlide < totalSlides - 1) {
-                currentSlide++;
+            if (katalogCurrentSlide < katalogTotalSlides - 1) {
+                katalogCurrentSlide++;
             } else {
-                currentSlide = 0;
+                katalogCurrentSlide = 0;
             }
             showSlide();
         }
